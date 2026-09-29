@@ -18,7 +18,7 @@ Firebase-администраторы: `smixnevertime@gmail.com` и `mmabou287@g
 
 ## GitHub Pages
 
-Поместите содержимое этой папки в отдельный GitHub-репозиторий. В Settings → Pages выберите **GitHub Actions**. Список администраторов уже включён в приложение; Actions secrets не нужны. Push в `main` запустит сборку и публикацию. Не задавайте пароль в коде или GitHub secrets; он хранится только в Firebase Authentication.
+В Settings → Pages выберите **Deploy from a branch**, branch `main`, folder `/(root)`. Корневые `index.html` и `assets/` уже являются production-сборкой. Для будущих изменений запустите `npm run build` и отправьте сгенерированные root-файлы в `main`. Список администраторов уже включён в приложение; Actions secrets не нужны. Пароли хранятся только в Firebase Authentication.
 
 Сроки авиа (5–12 дней) и автобуса (10–18 дней) выбираются при создании заказа. Этап шкалы вычисляется по времени в браузере; пауза, остановка, ручной статус и доплата синхронизируются через Realtime Database.# React + TypeScript + Vite
 
