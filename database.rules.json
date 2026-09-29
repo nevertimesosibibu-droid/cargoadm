@@ -1,0 +1,25 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "publicTracking": {
+      "$trackingCode": {
+        ".read": true,
+        ".write": "auth != null && auth.token.email_verified == true && (auth.token.email == 'smixnevertime@gmail.com' || auth.token.email == 'mmabou287@gmail.com')"
+      }
+    },
+    "publicReviews": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email_verified == true && (auth.token.email == 'smixnevertime@gmail.com' || auth.token.email == 'mmabou287@gmail.com')"
+    },
+    "reviews": {
+      ".read": "auth != null && auth.token.email_verified == true && (auth.token.email == 'smixnevertime@gmail.com' || auth.token.email == 'mmabou287@gmail.com')",
+      ".write": "auth != null && auth.token.email_verified == true && (auth.token.email == 'smixnevertime@gmail.com' || auth.token.email == 'mmabou287@gmail.com')"
+    },
+    "shipments": {
+      ".read": "auth != null && auth.token.email_verified == true && (auth.token.email == 'smixnevertime@gmail.com' || auth.token.email == 'mmabou287@gmail.com')",
+      ".write": "auth != null && auth.token.email_verified == true && (auth.token.email == 'smixnevertime@gmail.com' || auth.token.email == 'mmabou287@gmail.com')",
+      ".indexOn": ["createdAt"]
+    }
+  }
+}
